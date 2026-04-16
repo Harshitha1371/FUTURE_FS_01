@@ -1,0 +1,203 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+  transition: 0.3s;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: linear-gradient(180deg, #2c2c54, #40407a);
+  color: white;
+  padding: 25px;
+}
+
+.sidebar h2 {
+  margin-bottom: 5px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.sidebar button {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #fbc531;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.sidebar button:hover {
+  background: #e1a500;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* HEADER */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.form input,
+.form select {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+  transition: 0.2s;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  border: 1px solid #4834d4;
+  box-shadow: 0 0 5px rgba(72, 52, 212, 0.3);
+}
+
+.form button {
+  padding: 10px 18px;
+  background: #4834d4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover {
+  background: #372bb5;
+}
+
+/* SEARCH */
+#search {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* LEAD CARDS */
+.lead-card {
+  background: white;
+  padding: 18px;
+  margin-top: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.lead-card:hover {
+  transform: translateY(-3px);
+}
+
+/* TEXT */
+.lead-card h3 {
+  margin: 0;
+}
+
+.lead-card p {
+  margin: 5px 0;
+}
+
+/* STATUS BADGES */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* PROFESSIONAL COLORS */
+.status.new {
+  background: #4f46e5; /* indigo */
+  color: white;
+}
+
+.status.contacted {
+  background: #f59e0b; /* amber */
+  color: white;
+}
+
+.status.closed {
+  background: #10b981; /* green */
+  color: white;
+}
+
+/* DROPDOWN + INPUT INSIDE CARD */
+.lead-card select,
+.lead-card input {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* DELETE BUTTON */
+.lead-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #e84118;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lead-card button:hover {
+  background: #c23616;
+}
+
+/* 🌙 DARK MODE */
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .main {
+  background: #1e1e1e;
+}
+
+body.dark .lead-card {
+  background: #2a2a2a;
+  box-shadow: none;
+}
+
+body.dark input,
+body.dark select {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark .sidebar {
+  background: linear-gradient(180deg, #1e1e2f, #2c2c3e);
+}
+
+body.dark .form button {
+  background: #6c5ce7;
+}
+
+body.dark .form button:hover {
+  background: #5a4bd1;
+}

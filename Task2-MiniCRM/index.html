@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>🚀 Mini CRM</h2>
+<p>Smart Lead Manager</p>
+<hr style="border: 0.5px solid rgba(255,255,255,0.2); margin: 15px 0;">
+    <button onclick="toggleTheme()">🌙 Toggle</button>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+    <h1>Dashboard</h1>
+
+    <!-- FORM -->
+    <div class="form">
+      <input id="name" placeholder="Name">
+      <input id="email" placeholder="Email">
+      <input id="source" placeholder="Source">
+
+      <select id="status">
+        <option>New</option>
+        <option>Contacted</option>
+        <option>Closed</option>
+      </select>
+
+      <button onclick="addLead()">Add Lead</button>
+    </div>
+
+    <!-- SEARCH -->
+    <input id="search" placeholder="Search..." onkeyup="loadLeads()">
+
+    <!-- LEADS -->
+    <div id="leads"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
